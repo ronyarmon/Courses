@@ -5,9 +5,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import random
 import folium
-import os, shutil
+import os, shutil, getpass
 if 'results' in os.listdir(): shutil.rmtree('results')
 os.mkdir('results')
+data_dir = os.path.join('/home', getpass.getuser(), 'data')
 
 '''
 Source: https://www.kaggle.com/competitions/store-sales-time-series-forecasting
@@ -20,7 +21,7 @@ Fractional values are possible since products can be sold in fractional units
 onpromotion: the total number of items in a product family that were being promoted at a store at a given date.
 '''
 print('Pandas dataframe: Sales data')
-sales = pd.read_csv('../../data/sales.csv.zip')
+sales = pd.read_csv(os.path.join(data_dir, 'sales.csv.zip'))
 sales = sales.rename(columns={'family':'product_type', 'store_nbr': 'store_id'})
 # Remove product categories
 categories = ['GROCERY I', 'GROCERY II', 'HOME AND KITCHEN I', 'HOME AND KITCHEN II']

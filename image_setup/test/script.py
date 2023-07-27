@@ -5,7 +5,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import random
 import folium
-
+import os
+if 'results' in os.listdir(): os.remove('results')
+os.mkdir('results')
 
 '''
 Source: https://www.kaggle.com/competitions/store-sales-time-series-forecasting

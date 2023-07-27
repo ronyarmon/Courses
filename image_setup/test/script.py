@@ -18,7 +18,7 @@ Fractional values are possible since products can be sold in fractional units
 onpromotion: the total number of items in a product family that were being promoted at a store at a given date.
 '''
 print('Pandas dataframe: Sales data')
-sales = pd.read_csv('../../data/sales.csv')
+sales = pd.read_csv('../../data/sales.csv.zip')
 sales = sales.rename(columns={'family':'product_type', 'store_nbr': 'store_id'})
 # Remove product categories
 categories = ['GROCERY I', 'GROCERY II', 'HOME AND KITCHEN I', 'HOME AND KITCHEN II']

@@ -7,15 +7,9 @@
 
 import os, getpass
 import pandas as pd
-import numpy as np
-import seaborn as sns
 import holoviews as hv
 import hvplot.pandas
 import panel as pn
-import folium
-from folium.plugins import MarkerCluster
-import pycountry
-from geopy.geocoders import Nominatim
 from pylab import *
 hv.extension('bokeh')
 pn.extension()

@@ -12,3 +12,4 @@ hvplot==0.8.4
 jupyter==1.0.0
 jupyterlab==4.0.3
 psycopg2==2.9.6
+SQLAlchemy==2.0.19

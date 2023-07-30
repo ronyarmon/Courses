@@ -5,7 +5,7 @@ duckdb==0.8.1
 scipy==1.11.1
 matplotlib==3.7.2
 seaborn==0.12.2
-folium=0.14.0
+folium==0.14.0
 holoviews==1.17.0
 panel==1.2.1
 hvplot==0.8.4
